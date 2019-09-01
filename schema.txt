@@ -1,0 +1,46 @@
+MODEL/DB FIELDS
+
+### LISTINGS
+  id:
+  LOT_NUM: INT   /////////
+  yard: STR   /////////
+  odom: STR   ////////
+  REG: DATE     ////////
+  seller INT (FK [seller])
+  year: STR
+  make: STR
+  MODEL: STR
+  vin: STR
+  engine: STR
+  fuel: STR
+  catagory: STR
+  price: INT
+  keys: BOOL
+  comments: TEXT
+  avalible_date: DATE
+  is_published: BOOL [true]
+  photo_main: STR
+  photo_1: STR
+  photo_2: STR
+  photo_3: STR
+  photo_4: STR
+  photo_5: STR
+  photo_6: STR
+
+### Seller
+  id: INT
+  name: STR
+  phone: STR
+  email: STR
+
+### CONTACTS
+  id: INT
+  user_id: INT
+  listing: INT
+  listing_id: INT
+  name: STR
+  Email: STR
+  phone: STR  
+  message: TEXT
+  contact_date: DATE
+
